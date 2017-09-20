@@ -6,18 +6,18 @@
 
 		<title>Intro RDM</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/simple.css">
 		
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
@@ -29,13 +29,13 @@
 				<section>
 					<h2>Introduction to <br/>Research Data Management</h2><br/>
 					
-					<p>Nicholas Wolf  | May 2, 2017 </p>
+					<p>Vicky Steeves | September 20, 2017 </p>
 
 					<img src="imgs/dataservices.png" width="30%" height="30%" align="middle"><br/>
 					<p>Get this presentation: http://bit.ly/2p5GWlq</p>
 					<div class='footer'>
 						<hr/>
-						<p>Vicky's ORCID: <a href="http://orcid.org/0000-0003-4298-168X/">0000-0003-4298-168X</a> | Nick's ORCID: <a href="http://orcid.org/0000-0001-5512-6151">0000-0001-5512-6151</a><br/>
+						<p>Vicky's ORCID: <a href="http://orcid.org/0000-0003-4298-168X/">0000-0003-4298-168X</a><br/>
 						This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
 					</div>
 				</section>
@@ -65,15 +65,11 @@
 				</section>
 
 				<section>			
+					<h2>Most Scientific Research Data From the 1990s Is Lost Forever</h2>
+					<p><a href="https://www.theatlantic.com/national/archive/2013/12/scientific-data-lost-forever/356422/">Article</a> in the Atlantic</p>
+
+					<h3>A new study has found that as much as 80 percent of the raw scientific data collected by researchers in the early 1990s is gone forever, mostly because no one knows where to find it.</h3>
 					
-					<div style="width:40%; float:left;"><p>The majority of federally funded research is NOT reproducible.</p></div>
-					
-					<img src="imgs/reproducibility-stats.png" align="middle">
-					
-					<!--SPEAKER NOTES-->
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
 				</section>	
 				
 				<!--SLIDE 4-->
@@ -152,7 +148,7 @@
 					</aside>
 				</section>
 
-				<!--SLIDE 9-->
+				<!--SLIDE 9
 				<section>			
 					<h2>Examples of Well Managed, Public Data</h2>
 					
@@ -167,12 +163,7 @@
 							<span style="color: #63d297;">Dryad</span>, <a href="http://datadryad.org/resource/doi:10.5061/dryad.gm627">Geographic distribution and adaptive significance of genomic structural variants: an anthropological genetics perspective</a><br/>
 							<a href="http://doi.org/10.5061/dryad.gm627">doi:10.5061/dryad.815qq</a></p>
 					</div>
-				
-						<!--SPEAKER NOTES-->
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+				</section>-->
 				
 				<!--SLIDE 10-->
 				<section>			
@@ -236,6 +227,29 @@
 						<li><span style="color: #63d297;">Registrations</span>: when you have an unchanging version of your project, register it & get a DOI!</li>
 					</ul>
 									
+					<!--SPEAKER NOTES-->
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>			
+					<h2 align="left">Documentation with <img src="imgs/jupyter-logo.png" width="10%" height="10%"><br/> Jupyter Notebooks</h2>
+
+					<ol>
+					<li><span style="color: #63d297;">Web Application</span></li>
+						<ul>
+							<li>in-browser code editing: syntax highlighting & indentation</li>
+							<li>run code in-browser: results attached to parent code</li>
+							<li>display results in LaTex, HTML, SVG, & more</li>
+						</ul>
+					<li><span style="color: #63d297;">Notebook</span></li>
+						<ul>
+							<li>a complete record of a session, interleaving code with text, maths, & objects</li>
+							<li>can export to LaTex, PDF, slideshows, etc. or webpage</li>
+						</ul>
+					</ol>
+								
 					<!--SPEAKER NOTES-->
 					<aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
@@ -570,30 +584,6 @@
 					</aside>
 				</section>
 				
-				<section>
-					<h2>DMP Resources at NYU</h2>
-					
-					<div style="width:49%; height:100%; float: left; padding-right: 1px;">
-						<a href="https://dmptool.org/user_sessions/institution"><img src="imgs/dmptool.jpg" align="middle"></a>
-						
-						<p>The DMPTool provides templates & step-by-step guidance on most granting agencies. NYU affiliates can sign into the DMP Tool using their netID and password from the <a href="https://dmptool.org/user_sessions/institution">institutional log-in page</a>.</p>
-					</div>
-					
-					<div style="width:49%; height:100%; float: right;">
-						<img src="imgs/vicky-headshot.jpg" height=30% width=30%>
-						<img src="imgs/nick-headshot.jpg" height=30% width=30%>
-						
-						<p>Vicky Steeves and Nick Wolf!</p>
-						<p>We can provide individual and group consultations while you are writing and maintaining your DMPs.  </p>
-						
-					</div> 
-					
-					<!--SPEAKER NOTES-->
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-				
 				<!-- CONCLUSION SLIDE -->
 				<section>
 					<h2>Thank you! Questions?</h2><br/>
@@ -618,8 +608,8 @@
 			</div>
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.js"></script>
 
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
@@ -627,10 +617,10 @@
 				history: true,
 							// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'reveal/plugin/markdown/marked.js' },
+					{ src: 'reveal/plugin/markdown/markdown.js' },
+					{ src: 'reveal/plugin/notes/notes.js', async: true },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
 		</script>
